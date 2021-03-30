@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.divider{
+    border-bottom: 1px solid rgba(62,62,225,.12);
+    max-width: 100%;
+    margin: auto 40px;
+}
+/* HEADER */
+.menu{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+}
+.links ul li a{
+    color: rgba(55,56,60,.73);
+    text-decoration: none;
+    font-size: 16px;
+}
+.links ul li a:hover, a:active{
+    color: black;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+}
+.links ul li{
+    margin-left: 2em;
+}
+.name-container{
+    display: flex;
+}
+.name-container .bx{
+    align-self: center;
+    font-size: 30px;
+}
+.name{
+    font-weight: 900;
+    font-size: 24px;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/Pasquale.code.png");
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.hi-im{
+    font-size: 30px;
+    font-weight: 500;
+    color: #6D7777;
+}
+.hi-im span{
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+/* ABOUT ME */
+.aboutme-container{
+    margin-bottom: 30px;
+}
+.aboutme-container h1{
+    text-align: center;
+    margin: 30px 0px;
+}
+.aboutme-container p{
+    text-align: center;
+    margin: auto 200px;
+    line-height: 1.7em;
+    color:  #3b4c56;
+    font-size: 24px;
+}
+
+/* SKILLS */
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills{
+    text-align: center;
+    margin: 30px 0px;
+}
+.skill-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    margin: 30px 30px;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    z-index: -10;
+}
+.skill-icon{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.skills-names{
+    display: flex;
+    align-items: center;
+}
+.skills-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:#0e2431;
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: -10;
+}
+.skills-html{
+    width: 25%;
+} 
+.skills-css{
+    width: 25%;
+} 
+.skills-js{
+    width: 5%;
+}
+.skills-python{
+    width: 20%;
+}
+
+/* PORTFOLIO */
+.portfolio-title{
+    text-align: center;
+    margin: 30px 0px;
+}
+.portfolio-project{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project{
+    width: 300px;
+    height: 300px;
+    margin: 30px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    display: flex;
+}
+.caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    opacity: 0;
+    transition: all 0.8s;
+    background: rgba(0, 0, 0, 0);
+    z-index: -10;
+}
+.project:hover .caption{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+/* CONTACT */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+.social{
+    font-size: 30px;
+}
+.social a{
+    color: black;
+    margin: 0px 10px;
+}
+.social a:hover{
+    color:#6D7777;
+}
+.copyright{
+    font-size: 15px;
+}
+/* SMARTPHONE */
+@media only screen and (max-width: 600px){
+    .home{
+        padding: 90px 0px 0px 0px;
+        height: 500px;
+    }
+    .logo{
+        margin-right: 0px;
+    }
+    .hi-im{
+        text-align: center;
+    }
+    .aboutme-container p{
+        margin: auto 30px;
+    }
+    .social{
+        font-size: 25px;
+    }
+    .contact{
+        margin: 50px 10px;
+    }
+    .copyright{
+        font-size: 7px;
+    }
+    .links ul li {
+        display: none;
+    }
+}
